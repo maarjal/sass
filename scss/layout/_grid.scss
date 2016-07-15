@@ -13,7 +13,34 @@
   & img {
     width: 100%;
   }
+  & .subcolumn {
+    @include span-columns(4);
+    height: 100%;
+    width: 100%;
+  }
 }
+
+.subcolumn span {
+  font-size: 0.9rem;
+  padding: 3%;
+  margin-top: 6%;
+  border-right: 1px solid lightgrey;
+  // float: left;
+  display: inline-block;
+  // border: 2px solid pink;
+  width: 30%;
+  &:last-child {
+    border-right: none;
+  }
+  & a {
+    color: black;
+    margin-left: 5%;
+  }
+}
+
+// .column {
+//   border: 2px solid tomato;
+// }
 
 .content {
   padding: 5%;
