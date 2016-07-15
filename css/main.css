@@ -187,14 +187,18 @@ header {
   @media screen and (max-width: 990px) {
     .container {
       float: none;
-      width: 90%; }
-      .container .column {
-        margin-left: 25%;
-        min-width: 50%;
-        border: 2px solid tomato; } }
+      width: 90%; } }
+  @media screen and (max-width: 600px) {
+    .container .column {
+      min-width: 300px;
+      width: 100%;
+      border: 2px solid tomato; } }
 
 .row {
-  margin-top: 3%; }
+  margin-top: 3%;
+  border: 2px solid purple;
+  margin-left: auto;
+  margin-right: auto; }
 
 .column {
   float: left;
@@ -265,6 +269,10 @@ aside {
       width: 50%;
       margin-left: auto;
       margin-right: auto; } }
+  @media screen and (max-width: 600px) {
+    aside {
+      min-width: 300px;
+      width: 100%; } }
 
 .border-top {
   width: 100%;
