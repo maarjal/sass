@@ -82,8 +82,8 @@ h1 {
   text-transform: uppercase; }
 
 nav {
-  padding-top: 0.5%;
-  height: 5%;
+  padding-top: 1%;
+  height: 8%;
   border: 2px solid pink;
   background: black; }
 
@@ -163,49 +163,27 @@ header {
     transform: translate(-50%, -50%); }
 
 .container {
-  width: 70%; }
+  width: 70%;
+  float: left; }
 
 .row {
   margin-top: 3%; }
 
-.row-one-col1 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  height: 20em;
-  background: darkblue; }
-  .row-one-col1:last-child {
-    margin-right: 0; }
-
-.row-one-col2 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  height: 20em;
-  background: hotpink; }
-  .row-one-col2:last-child {
-    margin-right: 0; }
-
-.row-two-col1 {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  height: 20em;
-  background: green; }
-  .row-two-col1:last-child {
-    margin-right: 0; }
-
-.row-two-col2 {
+.column {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   height: 20em;
   background: tomato; }
-  .row-two-col2:last-child {
+  .column:last-child {
     margin-right: 0; }
+
+aside {
+  margin-top: 2%;
+  width: 28%;
+  float: right;
+  height: 100em;
+  background: tomato; }
 
 /*# sourceMappingURL=main.css.map */

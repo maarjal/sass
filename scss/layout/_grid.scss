@@ -1,27 +1,13 @@
 .container {
   width: 70%;
+  float: left;
 }
 
 .row {
   margin-top: 3%;
 }
 
-.row-one-col1 {
-  @include columns(6);
-  background: darkblue;
-}
-
-.row-one-col2 {
-  @include columns(6);
-  background: hotpink;
-}
-
-.row-two-col1 {
-  @include columns(6);
-  background: green;
-}
-
-.row-two-col2 {
+.column {
   @include columns(6);
   background: tomato;
 }
