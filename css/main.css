@@ -87,16 +87,22 @@ h1 {
 nav {
   padding-top: 1%;
   height: 3rem;
-  background: black; }
+  background: -webkit-linear-gradient(black, grey) left repeat;
+  background: linear-gradient(black, grey) left repeat;
+  background: -webkit-linear-gradient(black, grey) left repeat, -webkit-radial-gradient(black, grey);
+  background: linear-gradient(black, grey) left repeat, radial-gradient(black, grey); }
   @media screen and (max-width: 990px) {
-    nav .links {
-      display: none; }
-    nav .sandwich-button {
-      display: inline-block;
-      margin-left: 6%; } }
+    nav {
+      padding-top: 2%; }
+      nav .links {
+        display: none; }
+      nav .sandwich-button {
+        display: inline-block;
+        margin-left: 6%; } }
   @media screen and (max-width: 600px) {
     nav {
-      min-width: 300px; } }
+      min-width: 300px;
+      padding-top: 3%; } }
 
 .sandwich-button {
   display: none;

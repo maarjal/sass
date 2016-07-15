@@ -1,8 +1,10 @@
 nav {
   padding-top: 1%;
   height: 3rem;
-  background: black;
+  @include background(linear-gradient(black, grey) left repeat);
+  @include background(linear-gradient(black, grey) left repeat, radial-gradient(black, grey));
   @media #{$brk-point} {
+    padding-top: 2%;
     .links {
       display: none;
     }
@@ -13,6 +15,7 @@ nav {
   }
   @media #{$brk-point-small} {
     min-width: 300px;
+    padding-top: 3%;
   }
 }
 
