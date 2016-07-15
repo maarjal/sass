@@ -1,0 +1,50 @@
+nav {
+  padding-top: 0.5%;
+  height: 5%;
+  border: 2px solid pink;
+  background: black;
+  & a {
+    padding-right: 1%;
+   color: white;
+   text-decoration: none;
+ }
+ & a:first-child {
+   padding-left: 2%;
+ }
+ & i {
+   padding-right: 2%;
+ }
+}
+.nav-right {
+  width: 15%;
+  float: right;
+  margin-right: 2%;
+}
+
+header {
+  height: 35%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid pink;
+  position: relative;
+  & img {
+    border: 2px solid tomato;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hero {
+  border: 2px solid blue;
+  width: 100%;
+  height: 25em;
+  background: url("../img/bed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
