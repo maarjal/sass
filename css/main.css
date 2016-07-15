@@ -162,4 +162,50 @@ header {
     margin-right: -50%;
     transform: translate(-50%, -50%); }
 
+.container {
+  width: 70%; }
+
+.row {
+  margin-top: 3%; }
+
+.row-one-col1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 20em;
+  background: darkblue; }
+  .row-one-col1:last-child {
+    margin-right: 0; }
+
+.row-one-col2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 20em;
+  background: hotpink; }
+  .row-one-col2:last-child {
+    margin-right: 0; }
+
+.row-two-col1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 20em;
+  background: green; }
+  .row-two-col1:last-child {
+    margin-right: 0; }
+
+.row-two-col2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 20em;
+  background: tomato; }
+  .row-two-col2:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=main.css.map */

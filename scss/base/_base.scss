@@ -9,14 +9,14 @@ body {
   width: 100vw;
 }
 
-.wrap, .row {
-  @extend %clearfix;
-}
-
 .wrap {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.wrap, .row {
+  @extend %clearfix;
 }
 
 h1 {
