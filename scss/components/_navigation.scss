@@ -1,8 +1,25 @@
 nav {
+  min-width: 480px;
   padding-top: 1%;
   height: 3rem;
   // border: 2px solid pink;
   background: black;
+  @media #{$brk-point} {
+    .links {
+      display: none;
+    }
+    .sandwich-button {
+      display: inline-block;
+      margin-left: 6%;
+    }
+  }
+}
+
+.sandwich-button {
+  display: none;
+  color: white;
+  font-size: 1.2em;
+  // font-weight: bold;
 }
 
 .nav-content {

@@ -21,6 +21,12 @@ aside {
       padding: 2%;
     }
   }
+  @media #{$brk-point} {
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .border-top {

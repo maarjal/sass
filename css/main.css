@@ -82,9 +82,21 @@ h1 {
   text-transform: uppercase; }
 
 nav {
+  min-width: 480px;
   padding-top: 1%;
   height: 3rem;
   background: black; }
+  @media screen and (max-width: 990px) {
+    nav .links {
+      display: none; }
+    nav .sandwich-button {
+      display: inline-block;
+      margin-left: 6%; } }
+
+.sandwich-button {
+  display: none;
+  color: white;
+  font-size: 1.2em; }
 
 .nav-content {
   margin-left: auto;
@@ -136,11 +148,15 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 40%;
-  width: 90%;
+  height: 15em;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
+  @media screen and (max-width: 990px) {
+    header {
+      width: 90%;
+      border: 2px solid yellow; } }
 
 .hero {
   position: relative;
@@ -156,10 +172,23 @@ header {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); }
+  @media screen and (max-width: 990px) {
+    .hero {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid yellow; } }
 
 .container {
   width: 70%;
   float: left; }
+  @media screen and (max-width: 990px) {
+    .container {
+      float: none;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid red; } }
 
 .row {
   margin-top: 3%; }
@@ -185,7 +214,7 @@ header {
       margin-right: 0; }
 
 .subcolumn span {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   padding: 3%;
   margin-top: 6%;
   border-right: 1px solid lightgrey;
@@ -227,6 +256,12 @@ aside {
     aside .icons a {
       color: black;
       padding: 2%; }
+  @media screen and (max-width: 990px) {
+    aside {
+      float: none;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .border-top {
   width: 100%;

@@ -1,12 +1,16 @@
 header {
   background: url("http://bungalow5.dk/wp-content/uploads/2015/08/Bungalow5-header-home1.jpg");
   @include background-img-styles();
-  height: 40%;
-  width: 90%;
+  height: 15em;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   // border: 2px solid pink;
   position: relative;
+  @media #{$brk-point} {
+    width: 90%;
+    border: 2px solid yellow;
+  }
 }
 
 .hero {
@@ -18,5 +22,11 @@ header {
   @include background-img-styles();
   & h1 {
     @include center-things(50%);
+  }
+  @media #{$brk-point} {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid yellow;
   }
 }
