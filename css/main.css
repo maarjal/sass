@@ -71,6 +71,7 @@ body {
   width: 100vw; }
 
 .wrap {
+  border: 2px solid blue;
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
@@ -155,8 +156,7 @@ header {
   position: relative; }
   @media screen and (max-width: 990px) {
     header {
-      width: 90%;
-      border: 2px solid yellow; } }
+      width: 90%; } }
 
 .hero {
   position: relative;
@@ -176,19 +176,22 @@ header {
     .hero {
       width: 90%;
       margin-left: auto;
-      margin-right: auto;
-      border: 2px solid yellow; } }
+      margin-right: auto; } }
 
 .container {
+  border: 2px solid hotpink;
   width: 70%;
-  float: left; }
+  float: left;
+  margin-left: auto;
+  margin-right: auto; }
   @media screen and (max-width: 990px) {
     .container {
       float: none;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      border: 2px solid red; } }
+      width: 90%; }
+      .container .column {
+        margin-left: 25%;
+        min-width: 50%;
+        border: 2px solid tomato; } }
 
 .row {
   margin-top: 3%; }

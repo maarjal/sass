@@ -2,7 +2,6 @@ nav {
   min-width: 480px;
   padding-top: 1%;
   height: 3rem;
-  // border: 2px solid pink;
   background: black;
   @media #{$brk-point} {
     .links {
@@ -19,14 +18,11 @@ nav {
   display: none;
   color: white;
   font-size: 1.2em;
-  // font-weight: bold;
 }
 
 .nav-content {
-  margin-left: auto;
-  margin-right: auto;
+  @include center-with-margin();
   width: 90%;
-  // border: 2px solid white;
   & a {
     padding-right: 1%;
     color: white;
@@ -35,7 +31,6 @@ nav {
 }
 
 .nav-right {
-  // border: 2px solid hotpink;
   width: 15em;
   float: right;
   & a {

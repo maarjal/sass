@@ -1,22 +1,31 @@
 .container {
+  border: 2px solid hotpink;
   width: 70%;
   float: left;
+  @include center-with-margin();
   @media #{$brk-point} {
     float: none;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid red;
+    // @include center-with-margin();
+    .column {
+      margin-left: 25%;
+      min-width: 50%;
+      border: 2px solid tomato;
+    }
   }
 }
 
 .row {
+  // min-width: 300px;
   margin-top: 3%;
+  // width: 100%;
+  // @media #{$brk-point} {
+  //   width: 50%;
+  // }
 }
 
 .column {
   @include columns(6);
-  // background: tomato;
   & img {
     width: 100%;
   }
@@ -32,9 +41,7 @@
   padding: 3%;
   margin-top: 6%;
   border-right: 1px solid lightgrey;
-  // float: left;
   display: inline-block;
-  // border: 2px solid pink;
   width: 30%;
   &:last-child {
     border-right: none;
@@ -45,21 +52,15 @@
   }
 }
 
-// .column {
-//   border: 2px solid tomato;
-// }
-
 .content {
   padding: 5%;
   text-align: center;
-  // color: white;
   font-size: 1.1em;
   & h3 {
     margin-bottom: 3%;
     font-size: 1.5em;
   }
   & .date {
-    // border: 2px solid black;
     margin-top: 10%;
     display: block;
     text-align: left;

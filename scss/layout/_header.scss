@@ -3,19 +3,15 @@ header {
   @include background-img-styles();
   height: 15em;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  // border: 2px solid pink;
+  @include center-with-margin();
   position: relative;
   @media #{$brk-point} {
     width: 90%;
-    border: 2px solid yellow;
   }
 }
 
 .hero {
   position: relative;
-  // border: 2px solid blue;
   width: 100%;
   height: 25em;
   background: url("../img/background.jpeg");
@@ -25,8 +21,6 @@ header {
   }
   @media #{$brk-point} {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid yellow;
+    @include center-with-margin();
   }
 }
