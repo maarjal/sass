@@ -1,5 +1,4 @@
 .container {
-  border: 2px solid hotpink;
   width: 70%;
   float: left;
   @include center-with-margin();
@@ -9,20 +8,14 @@
   }
   @media #{$brk-point-small} {
     .column {
-      // text-align: center;
-      // margin-left: 25%;
       min-width: 300px;
       width: 100%;
-      border: 2px solid tomato;
     }
   }
 }
 
 .row {
   margin-top: 3%;
-  border: 2px solid purple;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .column {
@@ -38,10 +31,11 @@
 }
 
 .subcolumn span {
+  color: darken($date-color, 20%);
   font-size: 0.7rem;
   padding: 3%;
   margin-top: 6%;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid $date-color;
   display: inline-block;
   width: 30%;
   &:last-child {
@@ -62,6 +56,7 @@
     font-size: 1.5em;
   }
   & .date {
+    color: $date-color;
     margin-top: 10%;
     display: block;
     text-align: left;

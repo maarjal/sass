@@ -68,22 +68,23 @@ table {
 
 body {
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  color: #242424;
+  font-family: "Karla", Arial, Helvetica, sans-serif; }
 
 .wrap {
-  border: 2px solid blue;
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
 
 h1 {
+  font-weight: bold;
   color: white;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase; }
 
 nav {
-  min-width: 480px;
   padding-top: 1%;
   height: 3rem;
   background: black; }
@@ -93,6 +94,9 @@ nav {
     nav .sandwich-button {
       display: inline-block;
       margin-left: 6%; } }
+  @media screen and (max-width: 600px) {
+    nav {
+      min-width: 300px; } }
 
 .sandwich-button {
   display: none;
@@ -105,7 +109,7 @@ nav {
   width: 90%; }
   .nav-content a {
     padding-right: 1%;
-    color: white;
+    color: #fefefe;
     text-decoration: none; }
 
 .nav-right {
@@ -125,24 +129,17 @@ nav {
   transform: translate(-50%, -50%); }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: transparent;
+  background: transparent;
   border: 2px solid white;
-  font-size: 1.2em;
-  color: white; }
+  font-size: 1.4em;
+  color: white;
+  padding: 1%; }
 
 button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
-  background-color: transparent;
-  border: 2px solid white;
-  font-size: 1.2em;
-  color: white;
+  background: white;
+  color: black;
   outline: none; }
-
-button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
-  background-color: transparent;
-  border: 2px solid white;
-  font-size: 1.2em;
-  color: white; }
 
 header {
   background: url("http://bungalow5.dk/wp-content/uploads/2015/08/Bungalow5-header-home1.jpg");
@@ -179,7 +176,6 @@ header {
       margin-right: auto; } }
 
 .container {
-  border: 2px solid hotpink;
   width: 70%;
   float: left;
   margin-left: auto;
@@ -191,14 +187,10 @@ header {
   @media screen and (max-width: 600px) {
     .container .column {
       min-width: 300px;
-      width: 100%;
-      border: 2px solid tomato; } }
+      width: 100%; } }
 
 .row {
-  margin-top: 3%;
-  border: 2px solid purple;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 3%; }
 
 .column {
   float: left;
@@ -221,10 +213,11 @@ header {
       margin-right: 0; }
 
 .subcolumn span {
+  color: dimgray;
   font-size: 0.7rem;
   padding: 3%;
   margin-top: 6%;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #9c9c9c;
   display: inline-block;
   width: 30%; }
   .subcolumn span:last-child {
@@ -241,6 +234,7 @@ header {
     margin-bottom: 3%;
     font-size: 1.5em; }
   .content .date {
+    color: #9c9c9c;
     margin-top: 10%;
     display: block;
     text-align: left; }
@@ -256,6 +250,9 @@ aside {
     width: 100%;
     margin-top: 8%;
     padding-bottom: 8%; }
+  aside h5 {
+    font-weight: bold;
+    padding-bottom: 2%; }
   aside p {
     padding-bottom: 8%; }
   aside .icons {
@@ -292,7 +289,7 @@ aside {
   display: block;
   position: absolute;
   border-top: 0.8em solid;
-  border-top-color: #161616;
+  border-top-color: black;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   right: 46%;

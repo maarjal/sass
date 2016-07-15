@@ -1,5 +1,4 @@
 nav {
-  min-width: 480px;
   padding-top: 1%;
   height: 3rem;
   background: black;
@@ -11,6 +10,9 @@ nav {
       display: inline-block;
       margin-left: 6%;
     }
+  }
+  @media #{$brk-point-small} {
+    min-width: 300px;
   }
 }
 
@@ -25,7 +27,7 @@ nav {
   width: 90%;
   & a {
     padding-right: 1%;
-    color: white;
+    color: $nav-color;
     text-decoration: none;
   }
 }

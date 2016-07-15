@@ -7,10 +7,17 @@
 
 // buttons
 @mixin button-styles {
-  background-color: transparent;
-  border: 2px solid white;
-  font-size: 1.2em;
-  color: white;
+  background: transparent;
+  border: 2px solid $header-color;
+  font-size: 1.4em;
+  color: $header-color;
+  padding: 1%;
+}
+
+@mixin button-hover {
+  background: $header-color;
+  color: $blogpost-header-color;
+  outline: none;
 }
 
 // background image

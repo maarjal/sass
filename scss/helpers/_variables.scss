@@ -1,36 +1,14 @@
 // color variables
-$grey: #edeff0;
-$dark-grey: #545e60;
-$green-grey: #7b8b8e;
-$green: #2c9676;
-$pink: #f092b0;
-$purple: #838cc7;
-$white: rgb(255, 255, 255);
-$concrete: #bfc7ce;
-$light-black: #3e464c;
-$blue: #3079AB;
-
-// descriptive colors
-
-$title-color: $light-black;
-$java-color: $green;
-$python-color: $pink;
-$hr-color: $concrete;
-$main-background-color: $grey;
-$heading-color: $dark-grey;
-$text-color: $green-grey;
-$wordpress-color: $purple;
-$css-color: $blue;
+$nav-color: #fefefe;
+$header-color: white;
+$blogpost-header-color: black;
+$text-color: #242424;
+$date-color: #9c9c9c;
 
 
 //font stacks
 $stack-sans-serif: Arial, Helvetica, sans-serif;
-$stack-arial: "Arial Rounded MT Bold", $stack-sans-serif;
-
-// border radius
-$corners: 5px;
-$pill-radius: 25px;
-$circle-radius: 50%;
+$stack-karla: "Karla", $stack-sans-serif;
 
 // media queries
 $brk-point: "screen and (max-width: 990px)";
