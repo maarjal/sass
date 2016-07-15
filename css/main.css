@@ -83,22 +83,19 @@ h1 {
 
 nav {
   padding-top: 1%;
-  height: 8%;
-  border: 2px solid pink;
+  height: 3rem;
   background: black; }
 
 .nav-content {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  border: 2px solid white; }
+  width: 90%; }
   .nav-content a {
     padding-right: 1%;
     color: white;
     text-decoration: none; }
 
 .nav-right {
-  border: 2px solid hotpink;
   width: 15em;
   float: right; }
   .nav-right a {
@@ -143,12 +140,10 @@ header {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid pink;
   position: relative; }
 
 .hero {
   position: relative;
-  border: 2px solid blue;
   width: 100%;
   height: 25em;
   background: url("../img/background.jpeg");
@@ -174,18 +169,69 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  height: 20em;
-  background: tomato; }
+  height: 100%; }
   .column:last-child {
     margin-right: 0; }
   .column img {
     width: 100%; }
 
+.content {
+  padding: 5%;
+  text-align: center;
+  font-size: 1.1em; }
+  .content h3 {
+    margin-bottom: 3%;
+    font-size: 1.5em; }
+  .content .date {
+    margin-top: 10%;
+    display: block;
+    text-align: left; }
+
 aside {
+  padding-bottom: 2%;
   margin-top: 2%;
   width: 28%;
   float: right;
-  height: 100em;
-  background: tomato; }
+  height: 100%;
+  border: 2px solid tomato;
+  text-align: center; }
+  aside img {
+    width: 100%;
+    margin-top: 8%;
+    padding-bottom: 8%; }
+  aside p {
+    padding-bottom: 8%; }
+  aside .icons {
+    padding-top: 8%; }
+    aside .icons a {
+      color: black;
+      padding: 2%; }
+
+.border-top {
+  width: 100%;
+  height: 3em;
+  background: black;
+  position: relative;
+  color: white; }
+  .border-top h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+
+.border-top:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 0.8em solid;
+  border-top-color: #161616;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  right: 46%;
+  bottom: -25%;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em; }
 
 /*# sourceMappingURL=main.css.map */
