@@ -1,0 +1,17 @@
+.hero button {
+  @include center-things(65%);
+}
+
+#{$all-buttons} {
+  @include button-styles;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+  @include button-styles;
+  outline: none;
+}
+
+#{$all-buttons-active} {
+  @include button-styles;
+}
