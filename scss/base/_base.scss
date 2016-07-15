@@ -1,14 +1,16 @@
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  @include border-box;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+}
+
+.wrap, .row {
+  @extend %clearfix;
 }
 
 .wrap {

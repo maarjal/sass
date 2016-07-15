@@ -1,26 +1,3 @@
-nav {
-  padding-top: 0.5%;
-  height: 5%;
-  border: 2px solid pink;
-  background: black;
-  & a {
-    padding-right: 1%;
-   color: white;
-   text-decoration: none;
- }
- & a:first-child {
-   padding-left: 2%;
- }
- & i {
-   padding-right: 2%;
- }
-}
-.nav-right {
-  width: 15%;
-  float: right;
-  margin-right: 2%;
-}
-
 header {
   background: url("http://bungalow5.dk/wp-content/uploads/2015/08/Bungalow5-header-home1.jpg");
   @include background-img-styles();

@@ -4,6 +4,14 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.wrap, .row {
+  *zoom: 1; }
+  .wrap:before, .row:before, .wrap:after, .row:after {
+    content: "";
+    display: table; }
+  .wrap:after, .row:after {
+    clear: both; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -51,9 +59,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*,
-*::before,
-*::after {
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -72,6 +80,32 @@ h1 {
   text-align: center;
   font-size: 2em;
   text-transform: uppercase; }
+
+nav {
+  padding-top: 0.5%;
+  height: 5%;
+  border: 2px solid pink;
+  background: black; }
+
+.nav-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 2px solid white; }
+  .nav-content a {
+    padding-right: 1%;
+    color: white;
+    text-decoration: none; }
+
+.nav-right {
+  border: 2px solid hotpink;
+  width: 15em;
+  float: right; }
+  .nav-right a {
+    margin-left: 2%;
+    text-align: right; }
+  .nav-right a:first-child {
+    margin-left: 15%; }
 
 .hero button {
   position: absolute;
@@ -99,25 +133,6 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
   border: 2px solid white;
   font-size: 1.2em;
   color: white; }
-
-nav {
-  padding-top: 0.5%;
-  height: 5%;
-  border: 2px solid pink;
-  background: black; }
-  nav a {
-    padding-right: 1%;
-    color: white;
-    text-decoration: none; }
-  nav a:first-child {
-    padding-left: 2%; }
-  nav i {
-    padding-right: 2%; }
-
-.nav-right {
-  width: 15%;
-  float: right;
-  margin-right: 2%; }
 
 header {
   background: url("http://bungalow5.dk/wp-content/uploads/2015/08/Bungalow5-header-home1.jpg");
