@@ -178,6 +178,8 @@ header {
   background: tomato; }
   .column:last-child {
     margin-right: 0; }
+  .column img {
+    width: 100%; }
 
 aside {
   margin-top: 2%;

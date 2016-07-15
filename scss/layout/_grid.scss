@@ -10,4 +10,7 @@
 .column {
   @include columns(6);
   background: tomato;
+  & img {
+    width: 100%;
+  }
 }
