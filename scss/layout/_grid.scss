@@ -1,7 +1,7 @@
 .container {
   width: 70%;
   float: left;
-  @include center-with-margin();
+  @extend %center;
   @media #{$brk-point} {
     float: none;
     width: 90%;

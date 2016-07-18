@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-content {
-  @include center-with-margin();
+  @extend %center;
   width: 90%;
   & a {
     padding-right: 1%;

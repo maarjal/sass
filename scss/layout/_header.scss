@@ -3,7 +3,7 @@ header {
   @include background-img-styles();
   height: 15em;
   width: 100%;
-  @include center-with-margin();
+  @extend %center;
   position: relative;
   @media #{$brk-point} {
     width: 90%;
@@ -21,6 +21,6 @@ header {
   }
   @media #{$brk-point} {
     width: 90%;
-    @include center-with-margin();
+    @extend %center;
   }
 }

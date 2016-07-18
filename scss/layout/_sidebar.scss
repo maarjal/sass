@@ -27,7 +27,7 @@ aside {
   @media #{$brk-point} {
     float: none;
     width: 50%;
-    @include center-with-margin();
+    @extend %center;
   }
   @media #{$brk-point-small} {
     min-width: 300px;

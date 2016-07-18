@@ -13,11 +13,7 @@ body {
 
 .wrap {
   width: 90%;
-  @include center-with-margin();
-}
-
-.wrap, .row {
-  @extend %clearfix;
+  @extend %center-with-margin;
 }
 
 h1 {
